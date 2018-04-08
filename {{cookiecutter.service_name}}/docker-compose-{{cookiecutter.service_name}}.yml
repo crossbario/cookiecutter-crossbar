@@ -1,4 +1,4 @@
-image: crossbario/crossbar:latest
+image: {{cookiecutter.image}}
 network_mode: host
 user: "1000"
 ports:

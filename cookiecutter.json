@@ -1,4 +1,7 @@
 {
+    "runtime": ["cpy3", "pypy3"],
+    "architecture": ["amd64", "armhf", "aarch64"],
+    "image": "{{ 'crossbario/crossbar' + ('' if cookiecutter.architecture == 'amd64' else ('-' + cookiecutter.architecture)) + ':' + cookiecutter.runtime }}",
     "service_title": "Crossbar .io OSS Router",
     "service_name": "crossbar",
     "listening_port": 8080,
