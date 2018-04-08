@@ -1,13 +1,23 @@
 {
-    "runtime": ["cpy3", "pypy3"],
-    "architecture": ["amd64", "armhf", "aarch64"],
-    "image": "{{ 'crossbario/crossbar' + ('' if cookiecutter.architecture == 'amd64' else ('-' + cookiecutter.architecture)) + ':' + cookiecutter.runtime }}",
-    "service_title": "Crossbar .io OSS Router",
+    "service_title": "Crossbar.io OSS Router",
     "service_name": "crossbar",
-    "listening_port": 8080,
+
+    "architecture": ["amd64", "armhf", "aarch64"],
+    "runtime": ["cpy3", "pypy3"],
+    "version": ["18.3.1"],
+    "image": "{{ 'crossbario/crossbar' + ('' if cookiecutter.architecture == 'amd64' else ('-' + cookiecutter.architecture)) + ':' + cookiecutter.runtime + '-' + cookiecutter.version }}",
+
+    "realm": "realm1",
+    "port": 8080,
+    "webdir": "../web",
+
     "_copy_without_render": [
         "*.min.js",
         "*.min.jgz",
         "web/js/autobahn.js"
-    ]
+    ],
+
+    "uid": null,
+    "service_uuid": null,
+    "generated": null
 }

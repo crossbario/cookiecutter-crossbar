@@ -6,7 +6,7 @@
             "type": "router",
             "realms": [
                 {
-                    "name": "realm1",
+                    "name": "{{cookiecutter.realm}}",
                     "roles": [
                         {
                             "name": "anonymous",
@@ -36,7 +36,7 @@
                     "type": "universal",
                     "endpoint": {
                         "type": "tcp",
-                        "port": {{cookiecutter.listening_port}}
+                        "port": {{cookiecutter.port}}
                     },
                     "rawsocket": {
                     },
@@ -49,7 +49,7 @@
                         "paths": {
                             "/": {
                                 "type": "static",
-                                "directory": "../web"
+                                "directory": "{{cookiecutter.webdir}}"
                             }
                         }
                     }

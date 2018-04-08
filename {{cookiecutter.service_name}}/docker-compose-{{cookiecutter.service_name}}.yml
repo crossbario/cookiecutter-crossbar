@@ -1,10 +1,10 @@
-image: {{cookiecutter.image}}
+image: {{ cookiecutter.image }}
+user: "{{ cookiecutter.uid }}"
 network_mode: host
-user: "1000"
 ports:
-  - {{cookiecutter.listening_port}}
+  - {{ cookiecutter.port }}
 volumes:
-  - ${PWD}/{{cookiecutter.service_name}}:/node
+  - ${PWD}/{{ cookiecutter.service_name }}:/node
 entrypoint: /usr/local/bin/crossbar
 command:
   - start
