@@ -1,0 +1,10 @@
+{
+    "service_title": "Crossbar .io OSS Router",
+    "service_name": "crossbar",
+    "listening_port": 8080,
+    "_copy_without_render": [
+        "*.min.js",
+        "*.min.jgz",
+        "web/js/autobahn.js"
+    ]
+}

@@ -1,2 +1,3 @@
 # cookiecutter-crossbar
-Cookiecutter project templates for Crossbar.io
+
+Cookiecutter project template for Crossbar.io OSS.
