@@ -1,6 +1,6 @@
 {
     "service_title": "Crossbar.io OSS Router",
-    "service_name": "crossbar",
+    "service_name": "crossbar_1",
 
     "architecture": ["amd64", "armhf", "aarch64"],
     "runtime": ["cpy3", "pypy3"],

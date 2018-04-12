@@ -1,3 +1,4 @@
+container_name: {{ cookiecutter.service_name }}
 image: {{ cookiecutter.image }}
 user: "{{ cookiecutter.uid }}"
 network_mode: host

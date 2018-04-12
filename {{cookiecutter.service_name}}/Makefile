@@ -8,6 +8,9 @@ default:
 	@echo "  start_host       Start Crossbar.io on host"
 	@echo ""
 
+build:
+	@echo "nothing to build here"
+
 version:
 	docker run -it --rm \
 		--entrypoint /usr/local/bin/crossbar \
